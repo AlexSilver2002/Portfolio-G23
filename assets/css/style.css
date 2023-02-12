@@ -1,0 +1,224 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    color: #e5e5e5;
+}
+/* ========NAV========= */
+nav{
+    position: sticky;
+    width: 100vw;
+}
+nav > ul{
+    display: flex;
+    position: fixed;
+    list-style: none;
+    justify-content: flex-end;
+    background-color:  #1F1D2C;
+    font-size: 20px;
+    gap: 50px;
+    height: 50px;
+    align-items:center;
+    padding-right: 110px;
+    width: 100vw;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* ==============HEADER========= */
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1F1D2C;
+}
+header > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+header > div > p{
+    font-size: 18px;
+}
+h1{
+    
+    font-size: 50px;
+}
+.icons{    
+    display: flex;
+    gap: 50px;
+}
+.img_icon{
+    width: 50px;
+}
+span{
+    color:#F1A600;
+}
+/* ==============SECTION1==========*/
+#section1{
+    background-color: #242635;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top:50px ;
+    padding-bottom: 50px;
+}
+.studies{
+    display: flex;
+    gap:200px;
+}
+.logo_academlo{
+    width: 150px;
+    height: 149px;
+}
+.studies1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ==============SECTION2==========*/
+#section2{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F1D2C;
+}
+
+.experience_container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+/*=======SECTION3======*/
+#section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: #242635;
+}
+.container_skills{
+    display: flex;
+    gap: 50px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+.percentage{
+    font-size: 40px;
+    color: #F1A600;
+}
+.text_p{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center'
+
+}
+.text{
+    font-size: 18px;
+}
+/* ==========SECTION4========== */
+#sction4{
+    display: flex;
+    flex-direction: column;
+    padding: top;
+    background-color: #1F1D2C;
+}
+.container_portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    background-color: #1F1D2C;
+}
+.portfolio1{
+    padding-top: 30px;
+    padding-left: 46%;
+    background-color: #1F1D2C;
+}
+#section4 .container_portfolio {
+    text-align: center;
+}
+#section4 .container_portfolio img {
+    width: 30%;
+    margin: 0 auto;
+    display: inline-block;
+}
+/* =========SECTION5========= */
+#section5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding: 50px;
+    gap: 30px;
+    background-color: #242635;
+}
+.container_contact{
+    display: flex;
+    gap: 100px;
+
+}
+.container_contact1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon_contact{
+    width: 100px;
+    height: 100px;
+}
+/* -=======FOOTER========= */
+footer{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    background-color: #1F1D2C;
+}
+
+/* ============QUERYS=========== */
+@media (max-width: 768px) {
+    header > div,
+    .studies,
+    .container_portfolio,
+    .container_contact {
+    flex-direction: column;
+    }
+}
+.img_header {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .img_header {
+    display: none;
+    }
+}
+@media (max-width: 768px) {
+    #section4 .container_portfolio img {
+    width: 40%;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav > ul {
+    display: none;
+    }
+    .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    }
+}
